@@ -7,7 +7,8 @@ import { getToken } from './storage';
 export const getDefaultApiUrl = (): string => {
   // 1. Explicit environment variable has the highest priority
   if (process.env.EXPO_PUBLIC_API_URL) {
-    return process.env.EXPO_PUBLIC_API_URL;
+    const raw = process.env.EXPO_PUBLIC_API_URL.trim().replace(/\/+$/, '');
+    return raw.endsWith('/api') ? raw : `${raw}/api`;
   }
 
   // 2. Auto-detect host machine IP from active Expo Metro connection
