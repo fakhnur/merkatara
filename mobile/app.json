@@ -14,8 +14,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#2563eb"
-      },
-      "usesCleartextTraffic": true
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -28,6 +27,14 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#2563eb"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
         }
       ]
     ],
