@@ -10,10 +10,12 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.fakhnur.merkatara",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#2563eb"
-      }
+      },
+      "usesCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
