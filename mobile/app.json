@@ -30,6 +30,12 @@
           "backgroundColor": "#2563eb"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "91f208cc-84eb-4672-87db-e1399d622022"
+      }
+    },
+    "owner": "cawuks-team"
   }
 }
